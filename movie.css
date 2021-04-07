@@ -1,0 +1,319 @@
+ * {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+background-color: #1f1f1f;
+height: 100vh;
+}
+
+
+
+#menu {
+padding: 10px;
+width: 55px;
+cursor: pointer;
+border: 1px solid #fff;
+border-radius: 8px;
+top: 5px;	
+left: 10px;	
+position: absolute;
+}
+
+
+.bar {
+height: 5px;	
+width: 100%;	
+background-color: #fff;
+display: block;	
+border-radius: 5px;	
+transition: 0.3s ease;
+}
+
+
+#bar1 {
+transform: translateY(-4px);
+-webkit-transform: translateY(-4px);
+}
+
+#bar3 {
+transform: translateY(4px);
+-webkit-transform: translateY(4px);
+}
+
+.nav li a {
+color: #fff;	
+text-decoration: none;
+font-size: 18px;
+font-family: 'PT Sans',sans-serif;
+}
+
+.nav li a:hover {	
+font-weight: bold;
+}
+
+.nav li {
+list-style: none;	
+padding: 16px 0;
+}
+
+.nav {	
+padding: 0;	
+margin: 0 20px;	
+transition: 0.3s ease;	
+display: none;
+margin-top: 55px;
+}
+
+.menu-bg, #menu-bar {
+top: 0;	
+left: 0;	
+position: fixed;
+height: 47px;
+width: 100%;
+}
+
+#menu-bar {	
+z-index: 2;	
+}
+
+.change .bar {
+background-color: silver;
+}
+
+.change #bar1 {	
+transform: translateY(4px) rotateZ(-45deg);
+-webkit-transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {	
+transform: translateY(-6px) rotate(45deg);
+-webkit-transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2 {
+opacity: 0;
+}
+.change {	
+display: block;
+}
+
+
+
+
+/* h1 tag blue background */
+.title {
+color: #fff;
+font-size: 30px;
+font-family: sans-serif;
+text-align: center;
+position: relative;
+top: 90px;
+background:  #2B3856;
+border: 1px solid  #737CA1;
+border-radius: 50px;
+box-shadow: 1px 1px 1px;
+height: 80px;
+}
+
+/* p tag title description on title */
+.words, .describe {
+color: #fff;
+font-size: 17px;
+font-family: sans-serif;
+text-align: center;
+}
+
+b {
+color: red;
+}
+
+/* 2021 pic */
+.imageDiv img {
+width: 100%;
+height: 200px;
+margin-top: 70px;
+}
+  
+/* star on the title */
+span {
+color: gold;
+font-size: 25px;
+}
+
+/* h2tag */
+.h2 {
+color: #fff;
+font-size: 25px;
+font-family: sans-serif;
+text-align: center;
+position: relative;
+margin-top: 50px;
+}
+ 
+/* aligning image start here */
+#firstImage img {
+height: 150px;
+width: 150px;
+margin-left: -160px;
+margin-top: 50px;
+}
+
+
+#secondImage img {
+height: 150px;
+width: 150px;
+margin-left: 170px;
+position: relative;
+left: -5px;
+top: -200px;
+}
+
+#thirdImage img {
+height: 150px;
+width: 150px;
+margin-left: -153px;
+margin-top: 20px;
+}
+
+#lastImage img {
+height: 150px;
+width: 150px;
+margin-left: 170px;
+position: relative;
+left: -5px;
+margin-top: -660px;
+}
+
+#fourImage img {
+height: 150px;
+widt: 150px;
+margin-top: -490px;
+position: relative;
+left: -5px;
+}
+
+
+#fiveImage img {
+height: 150px;
+width: 150px;
+margin-top: -320px;
+position: relative;
+left: -5px;
+}
+
+#sixImage img {
+height: 150px;
+width: 150px;
+margin-top: -150px;
+position: relative;
+left: -5px;
+}
+/* end */
+
+#firstImage img:hover {
+width: 165px;
+height: 165px;
+}
+
+
+
+
+
+
+
+/* Making the image move up and down */
+img.vertMove {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.vertMove {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { -webkit-transform: translateY(0); }
+    100% { -webkit-transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { webkit-transform: translateY(0); }
+    100% { -webkit-transform: translateY(-10px); }
+}
+
+
+
+/* ul for next page 123etc... */
+.option li {
+display: inline-block;
+margin-top: -160px;
+}
+
+
+/* styliing li a */
+ .option li a {
+color: #fff;
+font-size: 17px;
+font-family: "Roboto",sans-serif;
+text-decoration: none;
+text-align: center;
+padding: 5px 5px;
+}
+/* li a */
+.option li a:hover {
+color: red;
+}
+
+/* h3 about us link */
+.h3 a {
+color: #fff;
+font-size: 23px;
+font-family: sans-serif;
+text-decoration: none;
+text-align: center;
+}
+
+.h3 {
+margin-top: -100px;
+}
+
+.h3 a:hover {
+border: 1px solid #fff;
+border-radius: 5px;
+text-decoration: none
+}
+/* end here */
+
+/* h4 element */
+.h4 {
+color: #fff;
+font-size: 23px;
+font-family: sans-serif;
+text-align: center;
+margin-top: 30px;
+}
+
+/* ul for social media links */
+.social li {
+display: inline-block;
+margin-top: 10px;
+}
+
+ .social li a {
+font-size: 18px;
+font-family: "Roboto",sans-serif;
+text-decoration: underline;
+text-align: center;
+padding: 5px 5px;
+}
+/* end here */
+
+
+/* footer name of the page */
+.footer {
+color: #737CA1;
+font-size: 17px;
+font-family: sans-serif;
+text-align: center;
+margin-top: 60px;
+}
